@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContatoActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Novo Contato"
+        android:textColor="#003B24"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="331dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <EditText
+            android:id="@+id/editNome"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/baseline_account_circle_24"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:hint="Nome"
+            android:inputType="text"
+            android:paddingLeft="8dp" />
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/baseline_alternate_email_24"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="text"
+            android:paddingLeft="8dp" />
+
+        <EditText
+            android:id="@+id/editTelefone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/baseline_add_call_24"
+            android:drawablePadding="8dp"
+            android:ems="10"
+            android:hint="Telefone"
+            android:inputType="text"
+            android:paddingLeft="8dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonGravar"
+        android:drawableLeft="@drawable/baseline_add_24"
+        android:layout_width="170dp"
+        android:paddingLeft="24dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="#003b24"
+        android:text="Gravar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/buttonPesquisar"
+        android:drawableLeft="@drawable/baseline_contact_phone_24"
+        android:layout_width="170dp"
+        android:paddingLeft="24dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#003b24"
+        android:text="Pesquisar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGravar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
